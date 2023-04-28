@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+
+.nav-logo {
+}
+
+.nav-toggle {
+  cursor: pointer;
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.show {
+  height: 202px;
+}
+
+.nav-link {
+  padding: 1rem;
+  display: block;
+  transition: all 0.3s ease-in;
+  color: white;
+  background-color: black;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: black;
+  padding-left: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+}
