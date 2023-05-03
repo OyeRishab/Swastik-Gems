@@ -53,6 +53,7 @@ nav {
 }
 
 .nav-link {
+  font-family: "Quicksand", sans-serif;
   padding: 1rem;
   display: block;
   transition: all 0.3s ease-in;
@@ -83,6 +84,7 @@ nav {
   }
 
   .nav-link {
+    font-family: "Merriweather", serif;
     display: inline-block;
     position: relative;
     background-color: white;
@@ -138,7 +140,6 @@ nav {
   text-transform: capitalize;
 }
 .hero-text h1 {
-  /* font-family: "Quicksand", sans-serif; */
   font-style: italic;
   line-height: 1.5;
   letter-spacing: 2px;
@@ -150,11 +151,32 @@ nav {
   font: 32px;
   color: #b9f2ff;
   letter-spacing: 2px;
-
   margin-bottom: 20px;
 }
 
 .line {
   margin: 40px 0;
   width: 420px;
+}
+
+/* Hero Mobile View */
+
+@media screen and (max-width: 900px) {
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(images/Hero-Mobile.jpg);
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .line {
+    width: 100%;
+    margin: 40px auto;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-text h2 {
+    font-size: 22px;
+  }
 }
