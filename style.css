@@ -97,10 +97,10 @@ nav {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 4px;
+    height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #b9f2ff;
+    background-color: #326273;
     transform-origin: bottom right;
     transition: transform 0.25s ease-in;
   }
@@ -140,7 +140,7 @@ nav {
 .hero-text h1 {
   /* font-family: "Quicksand", sans-serif; */
   font-style: italic;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 2px;
   font-size: 36px;
 }
