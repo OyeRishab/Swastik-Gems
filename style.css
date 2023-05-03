@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ nav {
   top: 0;
   left: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  background-color: #f2f2f2;
+  background-color: white;
 }
 
 .nav-center {
@@ -56,17 +56,16 @@ nav {
   padding: 1rem;
   display: block;
   transition: all 0.3s ease-in;
-  color: #040303;
-  background-color: #f2f2f2;
+  color: #0a0903;
+  background-color: white;
 }
 
 .nav-link:hover {
-  background-color: #ffd700;
-  color: white;
+  background-color: #b9f2ff;
   padding-left: 1.5rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .nav-toggle {
     display: none;
   }
@@ -86,8 +85,8 @@ nav {
   .nav-link {
     display: inline-block;
     position: relative;
-    background-color: #f2f2f2;
-    color: #040303;
+    background-color: white;
+    color: #0a0903;
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
@@ -101,7 +100,7 @@ nav {
     height: 4px;
     bottom: 0;
     left: 0;
-    background-color: #ffd700;
+    background-color: #b9f2ff;
     transform-origin: bottom right;
     transition: transform 0.25s ease-in;
   }
@@ -112,8 +111,8 @@ nav {
 
   .nav-link:hover {
     padding: 1rem;
-    color: #040303;
-    background-color: #f2f2f2;
+    color: #0a0903;
+    background-color: white;
   }
 }
 
@@ -122,8 +121,7 @@ nav {
 .hero {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/Hero.png);
+  background-image: url(images/Hero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -136,13 +134,26 @@ nav {
   max-width: 1170px;
   margin: 0 auto;
   color: #f2f2f2;
+  text-transform: capitalize;
 }
 .hero-text h1 {
+  /* font-family: "Quicksand", sans-serif; */
+  font-style: italic;
+  line-height: 1.2;
+  letter-spacing: 2px;
   font-size: 36px;
-  font-weight: bold;
-  color: #f2f2f2;
-  line-height: 1.5;
-  text-transform: capitalize;
-  text-decoration: underline;
-  text-decoration-color: #ff69b4;
+}
+
+.hero-text h2 {
+  font-family: "Quicksand", sans-serif;
+  font: 32px;
+  color: #b9f2ff;
+  letter-spacing: 2px;
+
+  margin-bottom: 20px;
+}
+
+.line {
+  margin: 40px 0;
+  width: 420px;
 }
