@@ -163,20 +163,32 @@ nav {
 
 @media screen and (max-width: 900px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(images/hero-mobile.jpg);
+    background-image: url(images/hero-mobile.jpg);
+    background-position-x: left;
   }
   .hero-text {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 0.5rem;
   }
   .line {
     width: 100%;
     margin: 40px auto;
   }
   .hero-text h1 {
-    font-size: 32px;
+    font-size: 26px;
   }
   .hero-text h2 {
     font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1170px) {
+  .hero {
+    background-image: url(images/hero-mobile2.jpg);
+  }
+  .hero-text {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
