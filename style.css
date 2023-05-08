@@ -290,7 +290,8 @@ nav {
 
   .title-info {
     font-size: 20px;
-    width: 600px;
+    width: 500px;
+    max-width: 600px;
   }
   .section-info {
     margin-bottom: 80px;
