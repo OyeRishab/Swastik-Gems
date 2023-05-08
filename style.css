@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Merriweather", serif;
+}
+
+body {
+  background-color: white;
 }
 
 a {
@@ -13,11 +17,12 @@ a {
 /* Navbar Styles */
 
 nav {
+  display: inline-block;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background-color: white;
 }
 
@@ -34,8 +39,19 @@ nav {
   font-size: 24px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo p {
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  font-weight: 500;
+}
+
 .nav-logo {
-  height: 48px;
+  height: 60px;
 }
 
 .nav-toggle {
@@ -49,11 +65,12 @@ nav {
 }
 
 .show {
-  height: 202px;
+  height: 210px;
 }
 
 .nav-link {
   font-family: "Quicksand", sans-serif;
+  font-weight: 300;
   padding: 1rem;
   display: block;
   transition: all 0.3s ease-in;
@@ -84,14 +101,13 @@ nav {
   }
 
   .nav-link {
-    font-family: "Merriweather", serif;
+    font-family: "Quicksand", sans-serif;
     display: inline-block;
     position: relative;
     background-color: white;
     color: #0a0903;
     font-size: 18px;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 500;
   }
 
   .nav-link::after {
@@ -148,6 +164,7 @@ nav {
 
 .hero-text h2 {
   font-family: "Quicksand", sans-serif;
+  font-weight: 300;
   font: 32px;
   color: #b9f2ff;
   letter-spacing: 2px;
@@ -192,3 +209,5 @@ nav {
     background-color: rgba(0, 0, 0, 0.2);
   }
 }
+
+/* About Us Section */
