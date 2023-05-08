@@ -80,6 +80,7 @@ nav {
 .nav-link:hover {
   background-color: #b9f2ff;
   padding-left: 1.5rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 900px) {
@@ -241,6 +242,7 @@ nav {
 .title-info {
   width: 350px;
   font-family: "Quicksand", sans-serif;
+  font-size: 16px;
   line-height: 1.5;
 }
 .section-info {
@@ -259,7 +261,7 @@ nav {
 
 .card-title {
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-family: "Dancing Script", cursive;
   margin-bottom: 20px;
 }
