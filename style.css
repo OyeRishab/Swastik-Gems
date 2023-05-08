@@ -272,3 +272,34 @@ nav {
   object-fit: cover;
   object-position: center;
 }
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .card-container {
+    gap: 80px;
+  }
+
+  .card-title {
+    margin-top: 20px;
+    font-size: 36px;
+    text-align: left;
+  }
+
+  .title-info {
+    font-size: 20px;
+    width: 600px;
+  }
+  .section-info {
+    margin-bottom: 80px;
+    width: 800px;
+    font-size: 22px;
+  }
+
+  .card-img {
+    height: 400px;
+    width: 500px;
+  }
+}
