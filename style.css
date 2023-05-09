@@ -23,6 +23,7 @@ nav {
   left: 0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   background-color: white;
+  z-index: 2;
 }
 
 .nav-center {
@@ -308,5 +309,39 @@ nav {
 
   #img2 {
     order: 2;
+  }
+}
+
+#splide01 {
+  width: 350px;
+  margin: 40px auto;
+  /* border: 2px solid black; */
+  box-shadow: 0 0 10px black;
+  background-color: #0a0903;
+}
+
+.slide-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  top: 0;
+  left: 25px;
+  z-index: 0;
+}
+
+.splide__arrow {
+  color: #f2f2f2;
+  background-color: white;
+}
+
+@media screen and (min-width: 900px) {
+  .slide-img {
+    width: 600px;
+    height: 600px;
+  }
+  #splide01 {
+    width: 650px;
   }
 }
