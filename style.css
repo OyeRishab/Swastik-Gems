@@ -271,6 +271,8 @@ nav {
   width: 350px;
   object-fit: cover;
   object-position: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 @media screen and (min-width: 900px) {
@@ -302,5 +304,9 @@ nav {
   .card-img {
     height: 400px;
     width: 500px;
+  }
+
+  #img2 {
+    order: 2;
   }
 }
