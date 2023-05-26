@@ -12,6 +12,7 @@
       rel="stylesheet"
       href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css "
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Swastik Gems</title>
   </head>
@@ -47,16 +48,18 @@
       </div>
     </section>
     <section id="about">
-      <h1 class="section-title">About Us</h1>
-      <p class="title-info section-info">
-        At Swastik Gems, we take pride in our ability to create custom jewelry
-        pieces that are unique and one-of-a-kind. Whether you have a specific
-        design idea in mind or simply a concept you want to bring to life, we
-        can help you create the perfect piece of jewelry.
-      </p>
+      <div data-aos="fade-in">
+        <h1 class="section-title">About Us</h1>
+        <p class="title-info section-info">
+          At Swastik Gems, we take pride in our ability to create custom jewelry
+          pieces that are unique and one-of-a-kind. Whether you have a specific
+          design idea in mind or simply a concept you want to bring to life, we
+          can help you create the perfect piece of jewelry.
+        </p>
+      </div>
       <div class="card-container">
         <div class="card">
-          <div class="text-box">
+          <div class="text-box" data-aos="fade-left" data-aos-delay="100">
             <h1 class="card-title">Perfection</h1>
             <p class="title-info">
               Perfection is at the heart of everything we do. From the selection
@@ -69,10 +72,16 @@
               cherished for generations.
             </p>
           </div>
-          <img src="images/about1.jpg" alt="" class="card-img" />
+          <img
+            src="images/about1.jpg"
+            alt=""
+            class="card-img"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          />
         </div>
         <div class="card">
-          <div class="text-box">
+          <div class="text-box" data-aos="fade-right" data-aos-delay="100">
             <h1 class="card-title">Exquisite</h1>
             <p class="title-info">
               Exquisite is the word that best describes our jewelry collection.
@@ -85,10 +94,17 @@
               impression.
             </p>
           </div>
-          <img id="img2" src="images/about2.png" alt="" class="card-img" />
+          <img
+            id="img2"
+            src="images/about2.png"
+            alt=""
+            class="card-img"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          />
         </div>
         <div class="card">
-          <div class="text-box">
+          <div class="text-box" data-aos="fade-left" data-aos-delay="100">
             <h1 class="card-title">Elegance</h1>
             <p class="title-info">
               Elegance is the hallmark of our jewelry. Our designs are inspired
@@ -103,7 +119,13 @@
               beautiful.
             </p>
           </div>
-          <img src="images/about3.jpg" alt="" class="card-img" />
+          <img
+            src="images/about3.jpg"
+            alt=""
+            class="card-img"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          />
         </div>
       </div>
     </section>
@@ -150,6 +172,10 @@
       ></iframe>
     </div>
     <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
